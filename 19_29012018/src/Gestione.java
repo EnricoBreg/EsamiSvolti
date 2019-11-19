@@ -118,7 +118,7 @@ public class Gestione {
 		double max = 0;
 		String who = null; // ragioneSociale o nominativo del cliente con la lettura maggiore
 		
-		// PUNTO 5 -> prima soluzione (estesa) 
+		// PUNTO 5 -> prima soluzione (senza uso della mappa) 
 		/* for (Cliente c : listaClienti) {
 			List<Lettura> letture = c.getLetture();
 			
@@ -137,7 +137,7 @@ public class Gestione {
 			}
 		} */
 		
-		// PUNTO 5 -> seconda soluzione (compatta)
+		// PUNTO 5 -> seconda soluzione (con uso della mappa)
 		for (Cliente c : listaClienti) {
 			List<Lettura> letture = c.getLetture();
 			for(Lettura l : letture) {
